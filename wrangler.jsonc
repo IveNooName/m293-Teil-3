@@ -1,6 +1,11 @@
 {
   "name": "m293-teil-3",
   "compatibility_date": "2026-10-12",
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [
+    { "pattern": "m293.deinedomain.ch", "custom_domain": true }
+  ],
   "assets": {
     "directory": "./dist/m293-Teil-3/browser",
     "not_found_handling": "single-page-application"
