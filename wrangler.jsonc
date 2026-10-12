@@ -4,7 +4,7 @@
   "workers_dev": false,
   "preview_urls": false,
   "routes": [
-    { "pattern": "m293.deinedomain.ch", "custom_domain": true }
+    { "pattern": "teil3.m293.gibb.ivenooname.ch/", "custom_domain": true }
   ],
   "assets": {
     "directory": "./dist/m293-Teil-3/browser",
