@@ -1,1 +1,66 @@
-/* You can add global styles to this file, and also import other style files */
+@import '@fontsource-variable/inter';
+@import '@sbb-esta/lyne-elements/off-brand-theme.css';
+
+body {
+  font-family: 'Inter Variable', sans-serif;
+}
+
+/**
+ * Oranges Primary-Theme – Overrides für off-brand-theme.css
+ * Markenfarbe: #E06417 (Adobe RGB) → #ff6400 (sRGB, geclippt), OKLCH-Hue ≈ 42.9°.
+ * Light Mode: helles Orange + dunkle Button-Schrift.
+ * Dark Mode:  gedecktes Orange + weisse Button-Schrift.
+ * Muss NACH off-brand-theme.css geladen werden.
+ */
+:root {
+  /* Basis */
+  --sbb-color-royal-light:    #f86206; /* 5.86:1 Midnight-Text, 3.12:1 als Fläche/Häkchen auf Weiss */
+  --sbb-color-royal-dark:     #cb4e00; /* 4.54:1 weisser Text, 4.03:1 als Fläche auf Midnight */
+
+  /* 85 – Zwischenton, in beiden Modi gleich */
+  --sbb-color-royal85-light:  #d25100;
+  --sbb-color-royal85-dark:   #d25100;
+
+  /* 125 – Hover */
+  --sbb-color-royal125-light: #ff7738; /* 6.91:1 Midnight-Text */
+  --sbb-color-royal125-dark:  #b84e1b; /* 5.07:1 weisser Text, 3.60:1 auf Midnight */
+
+  /* 150 – Active / Pressed */
+  --sbb-color-royal150-light: #ef5d00; /* 5.42:1 Midnight-Text */
+  --sbb-color-royal150-dark:  #a35737; /* 5.28:1 weisser Text, 3.46:1 auf Midnight */
+
+  /* Dunkles Orange für Text auf Weiss (Link-Hover/Active) */
+  --orange-text-light:        #b74601; /* 5.40:1 auf Weiss */
+  --orange-text-light-strong: #9c3a01; /* 6.96:1 auf Weiss */
+
+  /* Reine Markenfarbe – nur dekorativ */
+  --brand-orange: #ff6400;
+
+  --header-bg-color: #25211E;
+}
+
+@supports (color: color(a98-rgb 0 0 0)) {
+  :root {
+    --brand-orange: color(a98-rgb 0.878 0.392 0.090);
+  }
+}
+
+/* Primary-Buttons: Light = dunkle Schrift, Dark = weisse Schrift (auch bei Hover/Active) */
+sbb-button,
+sbb-button-link,
+sbb-button-static {
+  --sbb-button-color-default-text: light-dark(var(--sbb-color-midnight), var(--sbb-color-white));
+  --sbb-button-color-hover-text:   light-dark(var(--sbb-color-midnight), var(--sbb-color-white));
+  --sbb-button-color-active-text:  light-dark(var(--sbb-color-midnight), var(--sbb-color-white));
+}
+
+/* Links: Hover/Active im Light Mode mit dunklem Orange statt primary125/150 */
+sbb-link,
+sbb-link-button,
+sbb-link-static,
+sbb-block-link,
+sbb-block-link-button,
+sbb-block-link-static {
+  --sbb-link-color-hover:  light-dark(var(--orange-text-light),        var(--sbb-color-cloud));
+  --sbb-link-color-active: light-dark(var(--orange-text-light-strong), var(--sbb-color-silver));
+}
