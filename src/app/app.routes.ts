@@ -1,7 +1,8 @@
 import { Routes } from '@angular/router';
 import { LandingPage } from './components/landing-page/landing-page';
+import { ErrorPage } from './components/error-page/error-page';
 
 export const routes: Routes = [
   { path: '', component: LandingPage, pathMatch: 'full' },
-  { path: '**', component: LandingPage },
+  { path: '**', component: ErrorPage },
 ];
