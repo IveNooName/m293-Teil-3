@@ -1,12 +1,12 @@
 .logo {
-  display: inline-block;
-  height: 77px;
-  width: 77px;
+  display: flex;
+  height: 68px;
+  padding-right: 5px;
 }
 
 header {
   max-width: none;
-  height: 90px;
+  height: 92px;
   background-color: var(--header-bg-color);
   padding-left: 20px;
   padding-right: 20px;
@@ -28,4 +28,12 @@ header {
 }
 .company-subtext {
   font-size: 12.5px;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  color: var(--sbb-text);
 }
