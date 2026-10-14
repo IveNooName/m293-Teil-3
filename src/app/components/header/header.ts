@@ -1,15 +1,17 @@
 import { Component } from '@angular/core';
 import { SvgIconComponent } from 'angular-svg-icon';
-import { SbbButtonLink, SbbTransparentButton, SbbTransparentButtonLink } from '@sbb-esta/lyne-angular/button';
-import { RouterLink } from '@angular/router';
+import { SbbTransparentButton, SbbTransparentButtonLink } from '@sbb-esta/lyne-angular/button';
+import { RouterLink, RouterLinkActive } from '@angular/router';
+import { SbbHeaderLink } from '@sbb-esta/lyne-angular/header';
 
 @Component({
   imports: [
     SvgIconComponent,
-    SbbButtonLink,
     SbbTransparentButtonLink,
     SbbTransparentButton,
     RouterLink,
+    RouterLinkActive,
+    SbbHeaderLink,
   ],
   selector: 'jfu-header',
   styleUrl: './header.scss',
