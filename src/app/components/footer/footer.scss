@@ -1,0 +1,38 @@
+footer {
+  background-color: var(--sbb-footer-background-color);
+}
+
+.container {
+
+  margin-top: 140px;
+  max-width: 1300px;
+  margin-inline: auto;
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.title {
+  font-size: 12px;
+  font-weight: bolder;
+  color: var(--footer-title);
+
+  margin-bottom: 12px;
+}
+
+.link {
+  font-size: 12px;
+  color: var(--footer-link);
+  text-decoration: none;
+}
+
+.link p {
+  margin: 7px 0 0;
+}
+
+.link:hover {
+  color: var(--footer-link-hover);
+}

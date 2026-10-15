@@ -10,6 +10,7 @@ import {
   SbbNavigationSection,
   SbbNavigationSectionTrigger,
 } from '@sbb-esta/lyne-angular/navigation';
+import { Footer } from './components/footer/footer';
 
 @Component({
   imports: [
@@ -23,6 +24,7 @@ import {
     SbbNavigationSection,
     SbbNavigationList,
     SbbNavigationLink,
+    Footer,
   ],
   selector: 'jfu-root',
   styleUrl: './app.scss',

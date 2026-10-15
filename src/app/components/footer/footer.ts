@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
+import { SbbLinkList } from '@sbb-esta/lyne-angular/link-list';
+import { SbbLink } from '@sbb-esta/lyne-angular/link';
+import { RouterLink } from '@angular/router';
 
 @Component({
-  imports: [],
+  imports: [SbbLinkList, SbbLink, RouterLink],
   selector: 'jfu-footer',
   styleUrl: './footer.scss',
   templateUrl: './footer.html',
