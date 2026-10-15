@@ -21,4 +21,21 @@
 
   <img src="werkstatt_night.jpg" alt="" class="image">
 
+  <h2 class="section">Unsere Produkte</h2>
+
+  <div class="product-grid">
+    @for(p of productCards; track p.id) {
+      <sbb-card color="milk" class="product-cards">
+        <sbb-title level="4">{{ p.title }}</sbb-title>
+        <img src="{{ p.imageUrl }}" alt="" class="product-image">
+        <p class="product-description">{{ p.description }}</p>
+
+        <sbb-transparent-button-link routerLink="{{ p.link }}" class="product-link">
+          <i class="bi bi-arrow-right"></i>
+          Mehr Erfahren
+        </sbb-transparent-button-link>
+      </sbb-card>
+    }
+  </div>
+
 </main>

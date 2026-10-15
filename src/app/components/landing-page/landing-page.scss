@@ -42,3 +42,39 @@
   border-radius: 20px;
   margin-top: 140px;
 }
+
+.section {
+  margin-top: 50px;
+}
+
+.product-cards {
+  padding: 15px;
+  max-width: 340px;
+}
+
+.product-link {
+  display: flex;
+  justify-content: center;
+}
+
+.product-description{
+  margin-top: 4px;
+}
+
+.product-image {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+
+  border-radius: 5px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+
+  //padding-bottom: 40px;
+}
