@@ -3,9 +3,10 @@ import { SbbLinkList } from '@sbb-esta/lyne-angular/link-list';
 import { SbbLink } from '@sbb-esta/lyne-angular/link';
 import { RouterLink } from '@angular/router';
 import { SvgIconComponent } from 'angular-svg-icon';
+import { FooterLink } from '../footer-link/footer-link';
 
 @Component({
-  imports: [SbbLinkList, SbbLink, RouterLink, SvgIconComponent],
+  imports: [SbbLinkList, SbbLink, RouterLink, SvgIconComponent, FooterLink],
   selector: 'jfu-footer',
   styleUrl: './footer.scss',
   templateUrl: './footer.html',

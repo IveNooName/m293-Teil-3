@@ -1,0 +1,14 @@
+p {
+  color: var(--footer-link);
+  font-size: 12px;
+  margin: 7px 0 0;
+}
+
+p:hover {
+  color: var(--footer-link-hover);
+
+}
+
+a {
+  text-decoration: none;
+}

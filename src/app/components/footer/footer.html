@@ -2,27 +2,33 @@
   <div class="container">
     <div class="sections">
       <div>
-        <h6 class="title">Angebot</h6>
-        <a routerLink="/products/window"><p>Fenster</p></a>
-        <a routerLink="/products/doors"><p>Türen</p></a>
-        <a routerLink="/products/carpentry-work"><p>Schreinerarbeiten</p></a>
+        <h6>Angebot</h6>
+        <jfu-footer-link label="Fenster" link="/products/window" />
+        <jfu-footer-link label="Türen" link="/products/doors" />
+        <jfu-footer-link label="Schreinerarbeiten" link="/products/carpentry-work" />
       </div>
       <div>
-        <h6 class="title">Unternehmen</h6>
-        <a routerLink="/products/window"><p>Referenzen</p></a>
-        <a routerLink="/products/doors"><p>Über uns</p></a>
-        <a routerLink="/products/carpentry-work"><p>Datenschutz</p></a>
-        <a routerLink="/products/carpentry-work"><p>Impressum</p></a>
+        <h6>Unternehmen</h6>
+        <jfu-footer-link label="Referenzen" link="/products/carpentry-work" />
+        <jfu-footer-link label="Über uns" link="/about" />
+        <jfu-footer-link label="Impressum" link="/imprint" />
+        <jfu-footer-link label="Datenschutz" link="/data-policy" />
       </div>
       <div>
-        <p>
-          Jäger Fritz & Urs AG
-          Kantonsstrasse 32 3946 Turtmann
-        </p>
-        <p>
-          +41 27 932 13 13
-          info@jaeger-fensterbau.ch
-        </p>
+        <h6>Kontakt</h6>
+        <address>
+          <p>Jäger Fritz & Urs AG</p>
+          <p>Kantonsstrasse 32</p>
+          <p>3946 Turtmann</p>
+        </address>
+        <div class="contact">
+          <a href="tel:+41279321313">
+            <p>+41 27 932 13 13</p>
+          </a>
+          <a href="mailto:info@jaeger-fensterbau.ch">
+            <p>info&#64;jaeger-fensterbau.ch</p>
+          </a>
+        </div>
       </div>
     </div>
     <div class="logo-container">
