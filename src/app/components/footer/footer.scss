@@ -1,5 +1,6 @@
 footer {
   background-color: var(--sbb-footer-background-color);
+  padding-bottom: 30px;
 }
 
 .container {
@@ -23,20 +24,29 @@ footer {
   margin-bottom: 12px;
 }
 
-.link {
-  font-size: 12px;
-  color: var(--footer-link);
+.sections a {
   text-decoration: none;
 }
 
-.link p {
+.sections p {
+  color: var(--footer-link);
+  font-size: 12px;
   margin: 7px 0 0;
 }
 
-.link:hover {
+.sections p:hover {
   color: var(--footer-link-hover);
 }
 
 .sections {
   display: flex;
+  width: 100%;
+}
+
+.sections div {
+  width: 20%;
+}
+
+.logo {
+  color: var(--footer-logo);
 }
