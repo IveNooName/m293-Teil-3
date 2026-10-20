@@ -22,18 +22,36 @@ footer {
 
   margin-bottom: 12px;
 }
+.left {
+  display: flex;
+  width: 100%;
+}
 
 .sections {
   display: flex;
   width: 100%;
+  align-self: start;
+  padding-top: 10px;
 }
 
 .sections div {
   width: 20%;
 }
 
+.logo-container {
+  padding-top: 10px;
+}
+
 .logo {
   color: var(--footer-logo);
+}
+
+svg-icon.logo {
+  display: flex;
+}
+
+svg-icon.logo svg {
+  display: block;
 }
 
 address p {
@@ -59,4 +77,31 @@ address p {
 
 .contact a {
   text-decoration-color: var(--footer-link);
+}
+
+.sub-footer {
+  border-top: 0.5px solid var(--footer-line);
+
+  max-width: 1300px;
+  margin-inline: auto;
+
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  margin-top: -27px;
+}
+
+:host svg-icon.logo svg {
+  display: block;
+  filter:
+    drop-shadow(10px 0 0 var(--sbb-footer-background-color))
+    drop-shadow(-3px 3px 0 var(--sbb-footer-background-color))
+    drop-shadow(-8px 8px 0 var(--sbb-footer-background-color));
+}
+
+.copyright {
+  color: var(--footer-line);
+  font-size: 8px;
 }
