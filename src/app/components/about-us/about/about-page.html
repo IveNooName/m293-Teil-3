@@ -1,0 +1,12 @@
+<sbb-tab-nav-bar>
+  <a
+    routerLink="./"
+    routerLinkActive="sbb-active"
+    [routerLinkActiveOptions]="{ exact: true }"
+  >Heute</a>
+  <a
+    routerLink="/about/history"
+    routerLinkActive="sbb-active"
+  >Früher</a>
+</sbb-tab-nav-bar>
+<router-outlet />
