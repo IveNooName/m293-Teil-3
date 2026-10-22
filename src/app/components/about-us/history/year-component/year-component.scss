@@ -1,8 +1,9 @@
-.year-display {
+.year {
   width: 70px;
   height: 40px;
 
-  background-color: var(--sbb-color-primary);
+  color: var(--sbb-color-white);
+  background-color: var(--sbb-color-brand);
   border-radius: 20px;
 
   display: flex;
@@ -30,4 +31,12 @@
   height: 40px;
   display: flex;
   align-items: center;
+}
+
+.vr {
+  width: 2px;
+  background-color: var(--sbb-color-aluminium);
+  height: 100%;
+  margin: 0 auto;
+
 }
