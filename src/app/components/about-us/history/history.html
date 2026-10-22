@@ -1,1 +1,6 @@
-<p>history works!</p>
+<main class="container">
+  @for (event of events; track event.id) {
+    <jfu-year-component [event]="event"></jfu-year-component>
+  }
+</main>
+
