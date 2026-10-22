@@ -1,0 +1,33 @@
+.year-display {
+  width: 70px;
+  height: 40px;
+
+  background-color: var(--sbb-color-primary);
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.year-element {
+  display: flex;
+}
+
+.year-element {
+  p, h4 {
+    margin: 0;
+  }
+}
+
+.main {
+  padding-left: 20px;
+  max-width: 800px;
+  align-self: center;
+}
+
+.header {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
