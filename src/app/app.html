@@ -11,11 +11,11 @@
 
 
   <sbb-navigation-section #productSection="sbbNavigationSection" titleContent="Produkte">
-      <sbb-navigation-list>
-        <sbb-navigation-link routerLink="/products/window">Fenster</sbb-navigation-link>
-        <sbb-navigation-link routerLink="/products/doors">Türen</sbb-navigation-link>
-        <sbb-navigation-link routerLink="/products/carpentry-work">Schreinerarbeiten</sbb-navigation-link>
-      </sbb-navigation-list>
+    <sbb-navigation-list>
+      <sbb-navigation-link routerLink="/products/window">Fenster</sbb-navigation-link>
+      <sbb-navigation-link routerLink="/products/doors">Türen</sbb-navigation-link>
+      <sbb-navigation-link routerLink="/products/carpentry-work">Schreinerarbeiten</sbb-navigation-link>
+    </sbb-navigation-list>
   </sbb-navigation-section>
 
   <sbb-navigation-section #aboutUsSection="sbbNavigationSection" titleContent="Über uns">
@@ -27,15 +27,16 @@
 
   <sbb-navigation-section #companySection="sbbNavigationSection" titleContent="Unternehmen">
     <sbb-navigation-list>
-        <sbb-navigation-link routerLink="/imprint">Kontakt & Anfahrt</sbb-navigation-link>
-        <sbb-navigation-link routerLink="/imprint">Impressum</sbb-navigation-link>
-        <sbb-navigation-link routerLink="/data-policy">Datenschutz</sbb-navigation-link>
-      </sbb-navigation-list>
+      <sbb-navigation-link routerLink="/imprint">Kontakt & Anfahrt</sbb-navigation-link>
+      <sbb-navigation-link routerLink="/imprint">Impressum</sbb-navigation-link>
+      <sbb-navigation-link routerLink="/data-policy">Datenschutz</sbb-navigation-link>
+    </sbb-navigation-list>
   </sbb-navigation-section>
 </sbb-navigation>
 
+
 <div class="root">
-    <router-outlet />
+  <router-outlet />
 </div>
 
 <jfu-footer></jfu-footer>
