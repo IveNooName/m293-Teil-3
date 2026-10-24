@@ -35,7 +35,7 @@ body {
   --orange-text-light-strong: #9c3a01; /* 6.96:1 auf Weiss */
 
   /* Reine Markenfarbe – nur dekorativ */
-  --brand-orange: #ff6400;
+  --sbb-color-brand: #ff6400;
 
   --header-bg-color: #25211E;
   --sbb-footer-background-color: #0F0D0B;
@@ -48,7 +48,7 @@ body {
 
 @supports (color: color(a98-rgb 0 0 0)) {
   :root {
-    --brand-orange: color(a98-rgb 0.878 0.392 0.090);
+    --sbb-color-brand: color(a98-rgb 0.878 0.392 0.090);
   }
 }
 
