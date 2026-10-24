@@ -76,3 +76,52 @@
   justify-content: center;
   align-items: flex-start;
 }
+
+// =====================================================================================================================
+// MEDIA-QUERY's
+// =====================================================================================================================
+
+@media (width <= 1100px) {
+  .main-title h1 {
+    font-size: 50px;
+  }
+
+  .main-address h3 {
+    font-size: 30px;
+  }
+
+  .address p {
+    font-size: 20px;
+  }
+}
+
+@media (width <= 885px) {
+  .headline {
+    display: grid;
+    padding-top: 80px;
+  }
+
+  .main-address {
+    padding-top: 25px;
+    margin: 0;
+  }
+
+  .main-address h3 {
+    font-size: 22px;
+  }
+
+  .address p {
+    font-size: 16px;
+  }
+
+  .image {
+    margin-top: 80px;
+  }
+}
+
+@media (width <= 625px) {
+  .main-title h1 {
+    font-size: 36px;
+  }
+
+}
