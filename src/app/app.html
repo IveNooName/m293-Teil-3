@@ -5,7 +5,7 @@
     <sbb-navigation-button [sbbNavigationSection]="productSection">Produkte</sbb-navigation-button>
 
     <sbb-navigation-link routerLink="/quality">Qualität</sbb-navigation-link>
-    <sbb-navigation-button [sbbNavigationSection]="aboutUsSection">Über uns</sbb-navigation-button>
+    <sbb-navigation-button routerLink="/about">Über uns</sbb-navigation-button>
     <sbb-navigation-button [sbbNavigationSection]="companySection">Kontakt</sbb-navigation-button>
   </sbb-navigation-marker>
 
@@ -15,13 +15,6 @@
       <sbb-navigation-link routerLink="/products/window">Fenster</sbb-navigation-link>
       <sbb-navigation-link routerLink="/products/doors">Türen</sbb-navigation-link>
       <sbb-navigation-link routerLink="/products/carpentry-work">Schreinerarbeiten</sbb-navigation-link>
-    </sbb-navigation-list>
-  </sbb-navigation-section>
-
-  <sbb-navigation-section #aboutUsSection="sbbNavigationSection" titleContent="Über uns">
-    <sbb-navigation-list>
-      <sbb-navigation-link routerLink="/about">Heute</sbb-navigation-link>
-      <sbb-navigation-link routerLink="/about/history">Geschichte</sbb-navigation-link>
     </sbb-navigation-list>
   </sbb-navigation-section>
 
