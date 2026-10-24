@@ -6,8 +6,6 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .logo {
@@ -68,4 +66,10 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
+}
+
+@media (width < 800px) {
+  .desktop-links {
+    display: none;
+  }
 }
