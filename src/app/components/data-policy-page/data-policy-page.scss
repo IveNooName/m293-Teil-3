@@ -3,4 +3,34 @@
   gap: 7px;
 
   align-items: center;
+
+  margin-bottom: 14px;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+}
+
+.container h2 {
+  margin-top: 23px;
+  margin-bottom: 0;
+}
+
+.container p {
+  margin-bottom: 3px;
+  margin-top: 0;
+}
+
+.container ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.date {
+  padding-top: 14px;
+}
+
+.container h1 {
+  margin-bottom: 6px;
 }
