@@ -1,6 +1,8 @@
 footer {
   background-color: var(--sbb-footer-background-color);
   padding-bottom: 30px;
+
+  min-height: 280px;
 }
 
 .container {
@@ -8,50 +10,40 @@ footer {
   max-width: 1300px;
   margin-inline: auto;
 
+  min-height: 180px;
+
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 100%;
+  padding-top: 30px;
   gap: 16px;
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.sections h6 {
+.container h6 {
   font-size: 12px;
   font-weight: bolder;
   color: var(--footer-title);
 
   margin-bottom: 12px;
-}
-.left {
-  display: flex;
-  width: 100%;
+  margin-top: 8px;
 }
 
-.sections {
-  display: flex;
-  width: 100%;
-  align-self: start;
-  padding-top: 10px;
-}
-
-.sections div {
-  width: 20%;
+section {
+  width: 175px;
 }
 
 .logo-container {
   padding-top: 10px;
+  margin-left: auto;
+
+  width: 230px;
 }
 
 .logo {
   color: var(--footer-logo);
-}
-
-svg-icon.logo {
-  display: flex;
-}
-
-svg-icon.logo svg {
-  display: block;
 }
 
 address p {
@@ -66,7 +58,7 @@ address p {
   padding-top: 16px;
 }
 
-.contact p{
+.contact p {
   line-height: 1.5;
   margin: 0;
   color: var(--footer-link);
@@ -95,13 +87,20 @@ address p {
 
 :host svg-icon.logo svg {
   display: block;
-  filter:
-    drop-shadow(10px 0 0 var(--sbb-footer-background-color))
-    drop-shadow(-3px 3px 0 var(--sbb-footer-background-color))
-    drop-shadow(-8px 8px 0 var(--sbb-footer-background-color));
+  filter: drop-shadow(10px 0 0 var(--sbb-footer-background-color)) drop-shadow(-3px 3px 0 var(--sbb-footer-background-color)) drop-shadow(-8px 8px 0 var(--sbb-footer-background-color));
 }
 
 .copyright {
   color: var(--footer-line);
   font-size: 8px;
+}
+
+@media (width < 850px) {
+  .logo-container {
+    display: none;
+  }
+
+  .sub-footer {
+    margin-top: 43px;
+  }
 }
