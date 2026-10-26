@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { YearComponent } from './year-component/year-component';
-import { YearEvent } from '../../../services/model/YearEvent';
+import { YearEvent } from '../../services/model/YearEvent';
 
 @Component({
   imports: [YearComponent],

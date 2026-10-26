@@ -1,5 +1,5 @@
 import { Component, input } from '@angular/core';
-import { YearEvent } from '../../../../services/model/YearEvent';
+import { YearEvent } from '../../../services/model/YearEvent';
 
 @Component({
   imports: [],
