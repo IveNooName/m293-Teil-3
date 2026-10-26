@@ -2,12 +2,12 @@
   <h1>Datenschutzrichtlinie</h1>
 
   <div class="chips">
-    <sbb-chip-label [size]="'s'">
+    <sbb-chip-label [size]="isSmall() ? 'xs' : 's'">
       <i class="bi bi-calendar"></i>
       {{ changeDate | date: "dd. MMM yyyy" }}
     </sbb-chip-label>
     <span>·</span>
-    <sbb-chip-label [size]="'s'">
+    <sbb-chip-label [size]="isSmall() ? 'xs' : 's'">
       Jäger Fritz und Urs AG
     </sbb-chip-label>
   </div>
