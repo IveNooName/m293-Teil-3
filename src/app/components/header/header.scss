@@ -5,7 +5,6 @@
 
   display: flex;
   align-items: center;
-  gap: 16px;
 }
 
 .logo {
@@ -17,14 +16,15 @@
 }
 
 .company {
-  padding-top: 3px;
   margin-bottom: 0;
   margin-top: -0.5em;
+  line-height: 1.25;
 
 
   &.name {
     font-size: 24px;
     font-weight: bold;
+    margin: 0;
   }
 
   &.subtext {
@@ -85,6 +85,17 @@ header {
     }
     &.subtext {
       font-size: 10px;
+    }
+  }
+}
+
+@media (width < 350px) {
+  .company {
+    &.name {
+      font-size: 14px;
+    }
+    &.subtext {
+      font-size: 8px;
     }
   }
 }
