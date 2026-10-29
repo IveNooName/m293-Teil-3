@@ -5,9 +5,11 @@ import { inject } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { map } from 'rxjs';
 import { BreakpointObserver } from '@angular/cdk/layout';
+import { SbbNotification } from '@sbb-esta/lyne-angular/notification';
+import { SbbTitle } from '@sbb-esta/lyne-angular/title';
 
 @Component({
-  imports: [SbbChipLabel, DatePipe],
+  imports: [SbbChipLabel, DatePipe, SbbNotification, SbbTitle],
   selector: 'jfu-data-policy-page',
   styleUrl: './data-policy-page.scss',
   templateUrl: './data-policy-page.html',
