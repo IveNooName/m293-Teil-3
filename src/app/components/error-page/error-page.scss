@@ -1,4 +1,46 @@
 .container {
+  padding-top: 80px;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 16px;
+}
+
+h1, p {
+  margin: 0;
+}
+
+.code {
+  color: var(--sbb-color-brand);
+  font-size: 96px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.actions {
+  padding-top: 8px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 12px;
+}
+
+@media (width <= 360px) {
+  .container {
+    padding-top: 40px;
+  }
+
+  .code {
+    font-size: 72px;
+  }
+
+  h1 {
+    font-size: 24px;
+    overflow-wrap: anywhere;
+  }
+
+  .actions {
+    width: 100%;
+    flex-direction: column;
+  }
 }

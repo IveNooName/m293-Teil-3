@@ -5,10 +5,11 @@ import { map } from 'rxjs';
 import { SbbCard } from '@sbb-esta/lyne-angular/card';
 import { SbbTitle } from '@sbb-esta/lyne-angular/title';
 import { SbbButtonLink } from '@sbb-esta/lyne-angular/button';
+import { SbbCompactPaginator } from '@sbb-esta/lyne-angular/paginator';
 import { SbbCarousel, SbbCarouselItem, SbbCarouselList } from '@sbb-esta/lyne-angular/carousel';
 
 @Component({
-  imports: [RouterLink, SbbCard, SbbTitle, SbbButtonLink, SbbCarousel, SbbCarouselList, SbbCarouselItem],
+  imports: [RouterLink, SbbCard, SbbTitle, SbbButtonLink, SbbCarousel, SbbCarouselList, SbbCarouselItem, SbbCompactPaginator],
   selector: 'jfu-product-page',
   styleUrl: './product-page.scss',
   templateUrl: './product-page.html',
