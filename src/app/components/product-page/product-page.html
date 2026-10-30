@@ -3,8 +3,17 @@
   <h1>Unsere Produkte</h1>
 
   @for (p of products; track p.id) {
-    <sbb-card color="milk" class="product" [id]="'product-' + p.id" [class.selected]="p.id === selectedId()">
-      <img [src]="p.imageUrl" alt="" class="product-image">
+    <sbb-card color="milk" class="product" [id]="'product-' + p.id" [class.selected]="p.id === highlightedId()">
+      <sbb-carousel class="product-carousel">
+        <sbb-carousel-list>
+          @for (img of p.images; track img) {
+            <sbb-carousel-item>
+              <img [src]="img" [alt]="p.title" class="product-image">
+            </sbb-carousel-item>
+          }
+        </sbb-carousel-list>
+        <sbb-paginator [length]="p.images.length" [pageSize]="1" [pageIndex]="0"></sbb-paginator>
+      </sbb-carousel>
 
       <div class="product-content">
         <sbb-title level="3">{{ p.title }}</sbb-title>
