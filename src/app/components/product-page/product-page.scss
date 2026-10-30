@@ -21,9 +21,19 @@ h1, h2, p, ul {
 }
 
 .product-carousel {
+  display: block;
   width: 100%;
-  border-radius: 5px;
-  overflow: hidden;
+}
+
+// sbb-carousel-list sets a fixed px width/height from the first item (once), which doesn't follow the card width.
+// Items take the full width of the list instead, so the list can stay fluid.
+.product-carousel sbb-carousel-list {
+  width: 100%;
+  height: auto;
+}
+
+.product-carousel sbb-carousel-item {
+  width: 100%;
 }
 
 .product-image {
