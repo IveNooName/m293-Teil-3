@@ -10,7 +10,8 @@ h1, h2, p, ul {
 }
 
 .product {
-  display: flex;
+  display: grid;
+  gap: 15px;
   padding: 15px;
   scroll-margin-top: 20px;
 
@@ -20,13 +21,14 @@ h1, h2, p, ul {
 }
 
 .product-carousel {
-  width: 280px;
-  flex-shrink: 0;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .product-image {
   width: 100%;
-  aspect-ratio: 4/5;
+  aspect-ratio: 16/9;
   object-fit: cover;
   display: block;
 }
@@ -35,7 +37,6 @@ h1, h2, p, ul {
   display: grid;
   gap: 12px;
   align-content: start;
-  padding-left: 25px;
   min-width: 0;
 
   ul {
@@ -58,21 +59,10 @@ h1, h2, p, ul {
     gap: 24px;
   }
 
-  .product {
-    display: grid;
-  }
-
-  .product-carousel {
-    width: 100%;
-  }
-
   .product-image {
     aspect-ratio: 4/3;
   }
 
-  .product-content {
-    padding: 15px 0 0;
-  }
 }
 
 @media (width <= 360px) {

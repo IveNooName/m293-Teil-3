@@ -6,10 +6,9 @@ import { SbbCard } from '@sbb-esta/lyne-angular/card';
 import { SbbTitle } from '@sbb-esta/lyne-angular/title';
 import { SbbButtonLink } from '@sbb-esta/lyne-angular/button';
 import { SbbCarousel, SbbCarouselItem, SbbCarouselList } from '@sbb-esta/lyne-angular/carousel';
-import { SbbPaginator } from '@sbb-esta/lyne-angular/paginator';
 
 @Component({
-  imports: [RouterLink, SbbCard, SbbTitle, SbbButtonLink, SbbCarousel, SbbCarouselList, SbbCarouselItem, SbbPaginator],
+  imports: [RouterLink, SbbCard, SbbTitle, SbbButtonLink, SbbCarousel, SbbCarouselList, SbbCarouselItem],
   selector: 'jfu-product-page',
   styleUrl: './product-page.scss',
   templateUrl: './product-page.html',
