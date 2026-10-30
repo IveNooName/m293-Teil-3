@@ -1,1 +1,27 @@
-<p>product-page works!</p>
+<main class="container">
+
+  <h1>Unsere Produkte</h1>
+
+  @for (p of products; track p.id) {
+    <sbb-card color="milk" class="product" [id]="'product-' + p.id" [class.selected]="p.id === selectedId()">
+      <img [src]="p.imageUrl" alt="" class="product-image">
+
+      <div class="product-content">
+        <sbb-title level="3">{{ p.title }}</sbb-title>
+        <p>{{ p.description }}</p>
+
+        <ul>
+          @for (f of p.features; track f) {
+            <li>{{ f }}</li>
+          }
+        </ul>
+      </div>
+    </sbb-card>
+  }
+
+  <div class="contact">
+    <h2>Interesse geweckt?</h2>
+    <p>Wir beraten Sie gerne und erstellen Ihnen eine unverbindliche Offerte.</p>
+    <sbb-button-link routerLink="/imprint">Kontakt aufnehmen</sbb-button-link>
+  </div>
+</main>
