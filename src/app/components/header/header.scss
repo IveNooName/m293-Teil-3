@@ -8,8 +8,9 @@
 }
 
 .logo {
-  display: flex;
+  display: block;
   height: 68px;
+  aspect-ratio: 1;
   padding-right: 5px;
 
   color: var(--sbb-color-brand);

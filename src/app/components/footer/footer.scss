@@ -10,7 +10,7 @@ footer {
   max-width: 1300px;
   margin-inline: auto;
 
-  min-height: 180px;
+  min-height: 250px; // Platz für die 5 Links in «Unternehmen», sonst läuft die Trennlinie durch den Text
 
   display: flex;
   flex-wrap: wrap;
@@ -85,8 +85,7 @@ address p {
   margin-top: -27px;
 }
 
-:host svg-icon.logo svg {
-  display: block;
+.logo {
   filter: drop-shadow(10px 0 0 var(--sbb-footer-background-color)) drop-shadow(-3px 3px 0 var(--sbb-footer-background-color)) drop-shadow(-8px 8px 0 var(--sbb-footer-background-color));
 }
 

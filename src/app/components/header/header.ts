@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { SvgIconComponent } from 'angular-svg-icon';
+import { Logo } from '../logo/logo';
 import { SbbTransparentButton, SbbTransparentButtonLink } from '@sbb-esta/lyne-angular/button';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { SbbHeaderLink } from '@sbb-esta/lyne-angular/header';
 
 @Component({
   imports: [
-    SvgIconComponent,
+    Logo,
     SbbTransparentButtonLink,
     SbbTransparentButton,
     RouterLink,
