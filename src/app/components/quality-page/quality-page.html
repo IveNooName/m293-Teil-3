@@ -1,0 +1,44 @@
+<main class="container">
+  <h1>Schweizer Qualität</h1>
+
+  <p>
+    Seit zwei Generationen fertigen wir Fenster und Türen in unserer eigenen Werkstatt in Turtmann.
+    Wir verarbeiten einheimisches Holz, planen jedes Fenster individuell und setzen es selbst ein.
+    Unsere Holz- und Holz-Metall-Fenster sind EMPA-geprüft und tragen das FFF-Qualitätssignet.
+  </p>
+
+  <ul>
+    <li>Einheimische, nachhaltige Rohstoffe</li>
+    <li>Planung, Fertigung und Montage aus einer Hand</li>
+    <li>EMPA-geprüft, FFF-Qualitätssignet</li>
+  </ul>
+
+  <h2>Holz oder Holz-Metall?</h2>
+  <sbb-table-wrapper>
+    <table class="sbb-table">
+      <caption>
+        Vergleich Holzfenster und Holz-Metall-Fenster
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Eigenschaft</th>
+          <th scope="col">Holzfenster</th>
+          <th scope="col">Holz-Metall-Fenster</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (row of comparison; track row.label) {
+          <tr>
+            <th scope="row">{{ row.label }}</th>
+            <td>{{ row.wood }}</td>
+            <td>{{ row.woodMetal }}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </sbb-table-wrapper>
+
+  <div class="actions">
+    <sbb-button-link routerLink="/contact">Beratung anfragen</sbb-button-link>
+  </div>
+</main>

@@ -1,14 +1,18 @@
 <main class="container">
-
   <h1>Unsere Produkte</h1>
 
   @for (p of products; track p.id) {
-    <sbb-card color="milk" class="product" [id]="'product-' + p.id" [class.selected]="p.id === highlightedId()">
+    <sbb-card
+      color="milk"
+      class="product"
+      [id]="'product-' + p.id"
+      [class.selected]="p.id === highlightedId()"
+    >
       <sbb-carousel class="product-carousel">
         <sbb-carousel-list>
-          @for (img of p.images; track img) {
+          @for (img of p.images; track img.src) {
             <sbb-carousel-item>
-              <img [src]="img" [alt]="p.title" class="product-image">
+              <img [src]="img.src" [alt]="img.alt" class="product-image" />
             </sbb-carousel-item>
           }
         </sbb-carousel-list>
@@ -31,6 +35,6 @@
   <div class="contact">
     <h2>Interesse geweckt?</h2>
     <p>Wir beraten Sie gerne und erstellen Ihnen eine unverbindliche Offerte.</p>
-    <sbb-button-link routerLink="/imprint">Kontakt aufnehmen</sbb-button-link>
+    <sbb-button-link routerLink="/contact">Kontakt aufnehmen</sbb-button-link>
   </div>
 </main>

@@ -5,27 +5,29 @@
     <sbb-navigation-button [sbbNavigationSection]="productSection">Produkte</sbb-navigation-button>
 
     <sbb-navigation-link routerLink="/about">Über uns</sbb-navigation-link>
-    <sbb-navigation-button [sbbNavigationSection]="companySection">Unternehmen</sbb-navigation-button>
+    <sbb-navigation-button [sbbNavigationSection]="companySection"
+      >Unternehmen</sbb-navigation-button
+    >
   </sbb-navigation-marker>
-
 
   <sbb-navigation-section #productSection="sbbNavigationSection" titleContent="Produkte">
     <sbb-navigation-list>
       <sbb-navigation-link routerLink="/products/window">Fenster</sbb-navigation-link>
       <sbb-navigation-link routerLink="/products/door">Türen</sbb-navigation-link>
-      <sbb-navigation-link routerLink="/products/carpentry-work">Schreinerarbeiten</sbb-navigation-link>
+      <sbb-navigation-link routerLink="/products/carpentry-work"
+        >Schreinerarbeiten</sbb-navigation-link
+      >
     </sbb-navigation-list>
   </sbb-navigation-section>
 
   <sbb-navigation-section #companySection="sbbNavigationSection" titleContent="Unternehmen">
     <sbb-navigation-list>
-      <sbb-navigation-link routerLink="/imprint">Kontakt & Anfahrt</sbb-navigation-link>
+      <sbb-navigation-link routerLink="/contact">Kontakt & Anfahrt</sbb-navigation-link>
       <sbb-navigation-link routerLink="/imprint">Impressum</sbb-navigation-link>
       <sbb-navigation-link routerLink="/data-policy">Datenschutz</sbb-navigation-link>
     </sbb-navigation-list>
   </sbb-navigation-section>
 </sbb-navigation>
-
 
 <div class="root">
   <router-outlet />

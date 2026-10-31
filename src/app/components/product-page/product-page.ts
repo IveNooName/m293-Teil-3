@@ -41,12 +41,15 @@ export class ProductPage {
       id: 'window',
       title: 'Fenster',
       images: [
-        'products/window/1.jpg',
-        'products/window/2.jpg',
-        'products/window/3.jpg',
-        'products/window/4.jpg',
-        'products/window/5.jpg',
-        'products/window/6.jpg',
+        { src: 'products/window/1.jpg', alt: 'Bogenfenster mit Balkontür und Blick auf die Berge' },
+        { src: 'products/window/2.jpg', alt: 'Holzfenster unter der Dachschräge eines Wohnraums' },
+        { src: 'products/window/3.jpg', alt: 'Holzfenster mit Rundbogen hinter roten Vorhängen' },
+        {
+          src: 'products/window/4.jpg',
+          alt: 'Dreiteiliges Fenster mit Metallrahmen in einer Steinfassade',
+        },
+        { src: 'products/window/5.jpg', alt: 'Gebogene Fensterfront mit weissen Rahmen' },
+        { src: 'products/window/6.jpg', alt: 'Weisses Fenster mit Oberlicht in einer Holzfassade' },
       ],
       description:
         'Das bewährte Holzfenster wird aus einem der besten, umweltfreundlichsten und zudem aus einheimischen Rohstoffen gefertigt. Unsere Holz- und Holz-Metall-Fenster sind EMPA-geprüft und tragen das FFF-Qualitätssignet.',
@@ -61,12 +64,12 @@ export class ProductPage {
       id: 'door',
       title: 'Tür',
       images: [
-        'products/door/1.jpg',
-        'products/door/2.jpg',
-        'products/door/3.jpg',
-        'products/door/4.jpg',
-        'products/door/5.jpg',
-        'products/door/6.jpg',
+        { src: 'products/door/1.jpg', alt: 'Weisse Haustür mit geometrischen Glaselementen' },
+        { src: 'products/door/2.jpg', alt: 'Haustür aus Holz mit Füllungen und Seitenfenstern' },
+        { src: 'products/door/3.jpg', alt: 'Wohnungstür aus hellem Holz mit blauer Zarge' },
+        { src: 'products/door/4.jpg', alt: 'Holztür mit Holzzarge im Durchgang zur Küche' },
+        { src: 'products/door/5.jpg', alt: 'Zimmertür-Rahmen aus Holz in einem hellen Raum' },
+        { src: 'products/door/6.jpg', alt: 'Orange Innentür neben einem Treppenhaus' },
       ],
       description:
         'Die Holztüre, die jeder kennt und liebt, wie auch jedes Kleinkind gerne zuschlägt. Haus-, Innen- und Zimmertüren fertigen wir nach Mass in unserer eigenen Schreinerei.',
@@ -79,7 +82,10 @@ export class ProductPage {
     {
       id: 'carpentry-work',
       title: 'Schreinerarbeiten',
-      images: ['products/carpentry-work/1.jpg', 'products/carpentry-work/2.jpg'],
+      images: [
+        { src: 'products/carpentry-work/1.jpg', alt: 'Eckbank aus Holz mit Rückenlehne' },
+        { src: 'products/carpentry-work/2.jpg', alt: 'Küche mit Holzwand, Stühlen und Korkboden' },
+      ],
       description:
         'Wir machen auch allgemeine Schreinerarbeiten, wie zum Beispiel Eckbänke. Ob Möbel, Einbauschrank oder Reparatur: Wir beraten Sie gerne.',
       features: ['Möbel und Eckbänke', 'Einbauschränke', 'Reparaturen und Anpassungen'],

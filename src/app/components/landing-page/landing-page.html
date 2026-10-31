@@ -1,5 +1,4 @@
 <main>
-
   <div class="headline">
     <div class="main-title">
       <h1>Schweizer <a routerLink="/quality">Qualität</a></h1>
@@ -19,15 +18,19 @@
     </div>
   </div>
 
-  <img src="werkstatt_night.jpg" alt="" class="image">
+  <img
+    src="werkstatt_night.jpg"
+    alt="Werkstatt der Schreinerei Jäger bei Nacht mit beleuchteten Fenstern"
+    class="image"
+  />
 
   <h2 class="section">Unsere Produkte</h2>
 
   <div class="product-grid">
-    @for(p of productCards; track p.id) {
+    @for (p of productCards; track p.id) {
       <sbb-card color="milk" class="product-cards">
         <sbb-title level="4">{{ p.title }}</sbb-title>
-        <img src="{{ p.imageUrl }}" alt="" class="product-image">
+        <img src="{{ p.imageUrl }}" alt="" class="product-image" />
         <p class="product-description">{{ p.description }}</p>
 
         <sbb-transparent-button-link routerLink="{{ p.link }}" class="product-link">
@@ -37,5 +40,4 @@
       </sbb-card>
     }
   </div>
-
 </main>
