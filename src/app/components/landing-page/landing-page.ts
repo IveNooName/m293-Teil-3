@@ -26,7 +26,7 @@ export class LandingPage {
       title: 'Tür',
       imageUrl: 'images/products/main/door.png',
       description:
-        'Die Holztüre, die jeder kennt und liebt, wie auch jedes Kleinkind gerne zuschlägt.',
+        'Die Holztüre, robust gefertigt und individuell auf Ihr Zuhause abgestimmt – für Haus- und Zimmertüren.',
       link: '/products/door',
     },
     {
