@@ -19,12 +19,10 @@ export class QualityPage {
       woodMetal: 'Sehr wetterbeständig',
     },
     { label: 'Unterhalt', wood: 'Mittel', woodMetal: 'Gering' },
-    { label: 'Lebensdauer', wood: 'ca. 30–40 Jahre', woodMetal: 'ca. 40–50 Jahre' },
     {
       label: 'Optik',
       wood: 'Natürlich, innen und aussen Holz',
       woodMetal: 'Innen Holz, aussen modern',
     },
-    { label: 'Preis', wood: 'Günstiger', woodMetal: 'Höher' },
   ];
 }

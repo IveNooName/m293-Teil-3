@@ -1,4 +1,5 @@
-AuthType Basic
-AuthName "Passwortgeschützter Bereich"
-AuthUserFile /srv/vhosts/inf-293-25i-m293user11.iet-gibb.net/httpdocs/tmp/.htpasswd
-Require valid-user
+  RewriteEngine On
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+  RewriteRule ^ index.html [L]
