@@ -31,7 +31,7 @@ export class LandingPage {
       link: '/products/door',
     },
     {
-      id: 2,
+      id: 3,
       title: 'Schreinerarbeiten',
       imageUrl: 'products/main/carpentry-work.png',
       description: 'Wir machen auch allgemeine Schreinerarbeiten, wie zum Beispiel Eckbänke.',
