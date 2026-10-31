@@ -61,7 +61,7 @@ export class ProductPage {
       id: 'door',
       title: 'Tür',
       images: [
-        'products/door/2.jpg',
+        'products/door/1.jpg',
         'products/door/2.jpg',
         'products/door/3.jpg',
         'products/door/4.jpg',

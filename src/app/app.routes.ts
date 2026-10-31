@@ -11,7 +11,6 @@ export const routes: Routes = [
   { path: 'products', component: ProductPage },
   { path: 'products/:id', component: ProductPage },
   { path: 'about', component: AboutPage },
-  { path: 'data-policy', component: DataPolicyPage },
   { path: 'imprint', component: ImprintPage },
   { path: 'data-policy', component: DataPolicyPage },
   { path: '**', component: ErrorPage },
