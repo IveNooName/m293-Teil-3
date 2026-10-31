@@ -1,18 +1,57 @@
 .container {
   padding-top: 20px;
   display: grid;
-  gap: 24px;
+
+  gap: 40px;
+}
+
+h1, h2, p, ul, figure {
+  margin: 0;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 360px);
+  gap: 40px;
+  align-items: start;
+}
+
+.intro-text {
+  display: grid;
+  gap: 12px;
+  align-content: start;
+
+  ul {
+    padding-left: 20px;
+  }
+}
+
+.certificate {
+  display: grid;
+  gap: 8px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: #fff;
+    border-radius: 4px;
+  }
+
+  figcaption {
+    font-size: 0.9em;
+    opacity: 0.8;
+  }
+}
+
+.comparison {
+  display: grid;
+  gap: 12px;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-}
-
-caption {
-  caption-side: top;
-  text-align: left;
-  padding-bottom: 8px;
 }
 
 th,
@@ -38,21 +77,50 @@ tbody td {
   font-weight: 400;
 }
 
-.certificate {
-  margin: 0;
-  max-width: 500px;
+.contact {
+  display: grid;
+  gap: 12px;
+  justify-items: start;
+  margin-top: 24px; // zusätzlicher Abstand zur Tabelle
+}
 
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-    background: #fff;
-    border-radius: 4px;
+// =====================================================================================================================
+// MEDIA-QUERY's
+// =====================================================================================================================
+
+@media (width <= 800px) {
+  .intro {
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
 
-  figcaption {
-    padding-top: 8px;
-    font-size: 0.9em;
-    opacity: 0.8;
+  .certificate {
+    max-width: 360px;
+  }
+}
+
+@media (width <= 625px) {
+  .container {
+    gap: 24px;
+  }
+
+  th,
+  td {
+    padding: 8px 10px;
+  }
+
+  tbody th[scope='row'] {
+    white-space: normal;
+  }
+}
+
+@media (width <= 360px) {
+  h1 {
+    font-size: 28px;
+    overflow-wrap: anywhere;
+  }
+
+  .contact sbb-button-link {
+    width: 100%;
   }
 }

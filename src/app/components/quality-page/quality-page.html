@@ -1,56 +1,59 @@
 <main class="container">
+
   <h1>Schweizer Qualität</h1>
 
-  <p>
-    Seit zwei Generationen fertigen wir Fenster und Türen in unserer eigenen Werkstatt in Turtmann.
-    Wir verarbeiten einheimisches Holz, planen jedes Fenster individuell und setzen es selbst ein.
-    Unsere Holz- und Holz-Metall-Fenster sind EMPA-geprüft und tragen das FFF-Qualitätssignet.
-  </p>
+  <section class="intro">
+    <div class="intro-text">
+      <p>
+        Seit zwei Generationen fertigen wir Fenster und Türen in unserer eigenen Werkstatt in Turtmann.
+        Wir verarbeiten einheimisches Holz, planen jedes Fenster individuell und setzen es selbst ein.
+        Unsere Holz- und Holz-Metall-Fenster sind EMPA-geprüft und tragen das FFF-Qualitätssignet.
+      </p>
 
-  <ul>
-    <li>Einheimische, nachhaltige Rohstoffe</li>
-    <li>Planung, Fertigung und Montage aus einer Hand</li>
-    <li>EMPA-geprüft, FFF-Qualitätssignet</li>
-  </ul>
+      <ul>
+        <li>Einheimische, nachhaltige Rohstoffe</li>
+        <li>Planung, Fertigung und Montage aus einer Hand</li>
+        <li>EMPA-geprüft, FFF-Qualitätssignet</li>
+      </ul>
+    </div>
 
-  <h2>Unser Zertifikat</h2>
-  <figure class="certificate">
-    <img
-      src="quality/fff-certificate.jpg"
-      alt="Zertifikat des Schweizerischen Fachverbands Fenster- und Fassadenbranche (FFF) vom 1. April 1989: Fritz & Urs Jäger, Turtmann, sind für ihr EMPA-geprüftes Holzfenster berechtigt, das Signet «Schweizer Qualitäts-Holzfenster geprüft» zu führen"
-      width="1200"
-      height="1700"
-      loading="lazy"
-    />
-    <figcaption>FFF-Zertifikat für unsere Holzfenster (EMPA-geprüft)</figcaption>
-  </figure>
+    <figure class="certificate">
+      <img
+        src="quality/fff-certificate.jpg"
+        alt="Zertifikat des Schweizerischen Fachverbands Fenster- und Fassadenbranche (FFF) vom 1. April 1989: Fritz & Urs Jäger, Turtmann, sind für ihr EMPA-geprüftes Holzfenster berechtigt, das Signet «Schweizer Qualitäts-Holzfenster geprüft» zu führen"
+        width="1200"
+        height="1700"
+      />
+      <figcaption>FFF-Zertifikat für unsere Holzfenster (EMPA-geprüft)</figcaption>
+    </figure>
+  </section>
 
-  <h2>Holz oder Holz-Metall?</h2>
-  <sbb-table-wrapper>
-    <table>
-      <caption>
-        Vergleich Holzfenster und Holz-Metall-Fenster
-      </caption>
-      <thead>
-        <tr>
-          <th scope="col">Eigenschaft</th>
-          <th scope="col">Holzfenster</th>
-          <th scope="col">Holz-Metall-Fenster</th>
-        </tr>
-      </thead>
-      <tbody>
-        @for (row of comparison; track row.label) {
+  <section class="comparison">
+    <h2>Holz oder Holz-Metall?</h2>
+    <sbb-table-wrapper>
+      <table aria-label="Vergleich Holzfenster und Holz-Metall-Fenster">
+        <thead>
           <tr>
-            <th scope="row">{{ row.label }}</th>
-            <td>{{ row.wood }}</td>
-            <td>{{ row.woodMetal }}</td>
+            <th scope="col">Eigenschaft</th>
+            <th scope="col">Holzfenster</th>
+            <th scope="col">Holz-Metall-Fenster</th>
           </tr>
-        }
-      </tbody>
-    </table>
-  </sbb-table-wrapper>
+        </thead>
+        <tbody>
+          @for (row of comparison; track row.label) {
+            <tr>
+              <th scope="row">{{ row.label }}</th>
+              <td>{{ row.wood }}</td>
+              <td>{{ row.woodMetal }}</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </sbb-table-wrapper>
+  </section>
 
-  <div class="actions">
+  <div class="contact">
+    <p>Haben wir Ihr Interesse geweckt? Wir beraten Sie gerne und erstellen Ihnen eine unverbindliche Offerte.</p>
     <sbb-button-link routerLink="/contact">Beratung anfragen</sbb-button-link>
   </div>
 </main>
