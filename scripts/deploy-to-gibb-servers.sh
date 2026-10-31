@@ -11,13 +11,15 @@ set +a
 
 npm run build
 
+DIST="$ROOT/dist/m293-Teil-3/browser"
+
 # Sicherheitscheck: existiert der Build überhaupt?
-[ -f "$ROOT/dist/index.html" ] || { echo "dist/index.html fehlt – Build kaputt?"; exit 1; }
+[ -f "$DIST/index.html" ] || { echo "$DIST/index.html fehlt – Build kaputt?"; exit 1; }
 
 lftp -c "
 set sftp:auto-confirm yes;
 open -u $SFTP_USER,$SFTP_PASS sftp://$SFTP_HOST;
-lcd $ROOT/dist;
+lcd $DIST;
 cd httpdocs;
 mirror -R --delete --verbose \
   ./ ./
