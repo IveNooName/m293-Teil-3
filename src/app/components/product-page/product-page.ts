@@ -72,7 +72,7 @@ export class ProductPage {
         { src: 'images/products/door/6.jpg', alt: 'Orange Innentür neben einem Treppenhaus' },
       ],
       description:
-        'Die Holztüre, die jeder kennt und liebt, wie auch jedes Kleinkind gerne zuschlägt. Haus-, Innen- und Zimmertüren fertigen wir nach Mass in unserer eigenen Schreinerei.',
+        'Die Holztüre, robust gefertigt und individuell auf Ihr Zuhause abgestimmt. Haus-, Innen- und Zimmertüren fertigen wir nach Mass in unserer eigenen Schreinerei.',
       features: [
         'Haus-, Innen- und Zimmertüren',
         'Fertigung nach Mass',
