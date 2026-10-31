@@ -1,5 +1,5 @@
-import { Component, inject, signal } from '@angular/core';
-import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
+import { Component, inject, signal, viewChild } from '@angular/core';
+import { FormBuilder, FormGroupDirective, ReactiveFormsModule, Validators } from '@angular/forms';
 import { SbbError, SbbFormField } from '@sbb-esta/lyne-angular/form-field';
 import { SbbButton } from '@sbb-esta/lyne-angular/button';
 import { SbbNotification } from '@sbb-esta/lyne-angular/notification';
@@ -15,6 +15,7 @@ export class ContactForm {
 
   readonly subjects = ['Fenster', 'Türen', 'Schreinerarbeiten', 'Sonstiges'];
   readonly sent = signal(false);
+  private readonly formDirective = viewChild.required(FormGroupDirective);
 
   form = this.fb.nonNullable.group({
     name: ['', Validators.required],
@@ -36,6 +37,7 @@ export class ContactForm {
     }
     // Schulprojekt: Es gibt kein Backend, die Anfrage wird nicht versendet.
     this.sent.set(true);
-    this.form.reset();
+    // resetForm() setzt auch den Status «submitted» zurück, sonst bleiben die leeren Felder rot.
+    this.formDirective().resetForm({ subject: this.subjects[0] });
   }
 }
