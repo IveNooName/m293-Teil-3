@@ -37,3 +37,22 @@ tbody th[scope='row'] {
 tbody td {
   font-weight: 400;
 }
+
+.certificate {
+  margin: 0;
+  max-width: 500px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: #fff;
+    border-radius: 4px;
+  }
+
+  figcaption {
+    padding-top: 8px;
+    font-size: 0.9em;
+    opacity: 0.8;
+  }
+}

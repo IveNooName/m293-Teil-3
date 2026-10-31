@@ -18,6 +18,10 @@ DIST="$ROOT/dist/m293-Teil-3/browser"
 
 lftp -c "
 set sftp:auto-confirm yes;
+set net:timeout 30;
+set net:max-retries 5;
+set net:reconnect-interval-base 5;
+set mirror:parallel-transfer-count 1;
 open -u $SFTP_USER,$SFTP_PASS sftp://$SFTP_HOST;
 lcd $DIST;
 cd httpdocs;
