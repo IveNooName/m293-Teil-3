@@ -16,7 +16,7 @@ export class LandingPage {
     {
       id: 1,
       title: 'Fenster',
-      imageUrl: 'products/main/window.png',
+      imageUrl: 'images/products/main/window.png',
       description:
         'Das bewährte Holzfenster wird aus einem der besten, umweltfreundlichsten und zudem aus einheimischen Rohstoffen gefertigt.',
       link: '/products/window',
@@ -24,7 +24,7 @@ export class LandingPage {
     {
       id: 2,
       title: 'Tür',
-      imageUrl: 'products/main/door.png',
+      imageUrl: 'images/products/main/door.png',
       description:
         'Die Holztüre, die jeder kennt und liebt, wie auch jedes Kleinkind gerne zuschlägt.',
       link: '/products/door',
@@ -32,7 +32,7 @@ export class LandingPage {
     {
       id: 3,
       title: 'Schreinerarbeiten',
-      imageUrl: 'products/main/carpentry-work.png',
+      imageUrl: 'images/products/main/carpentry-work.png',
       description: 'Wir machen auch allgemeine Schreinerarbeiten, wie zum Beispiel Eckbänke.',
       link: '/products/carpentry-work',
     },

@@ -2,9 +2,11 @@ import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { SbbTableWrapper } from '@sbb-esta/lyne-angular/table';
 import { SbbButtonLink } from '@sbb-esta/lyne-angular/button';
+import { SbbNotification } from '@sbb-esta/lyne-angular/notification';
+import { SbbTitle } from '@sbb-esta/lyne-angular/title';
 
 @Component({
-  imports: [RouterLink, SbbTableWrapper, SbbButtonLink],
+  imports: [RouterLink, SbbTableWrapper, SbbButtonLink, SbbNotification, SbbTitle],
   selector: 'jfu-quality-page',
   styleUrl: './quality-page.scss',
   templateUrl: './quality-page.html',
