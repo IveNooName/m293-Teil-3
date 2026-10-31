@@ -2,8 +2,6 @@ import { ApplicationConfig, LOCALE_ID, provideBrowserGlobalErrorListeners } from
 import { provideRouter, TitleStrategy, withInMemoryScrolling } from '@angular/router';
 import { routes } from './app.routes';
 import { PageTitleStrategy } from './page-title-strategy';
-import { provideHttpClient } from '@angular/common/http';
-import { provideAngularSvgIcon } from 'angular-svg-icon';
 import localeDe from '@angular/common/locales/de';
 import { registerLocaleData } from '@angular/common';
 
@@ -14,8 +12,6 @@ export const appConfig: ApplicationConfig = {
     provideBrowserGlobalErrorListeners(),
     provideRouter(routes, withInMemoryScrolling({ scrollPositionRestoration: 'enabled' })),
     { provide: TitleStrategy, useClass: PageTitleStrategy },
-    provideHttpClient(),
-    provideAngularSvgIcon(),
     { provide: LOCALE_ID, useValue: 'de' },
   ],
 };
