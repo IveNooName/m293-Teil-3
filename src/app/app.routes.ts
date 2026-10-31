@@ -10,12 +10,12 @@ import { ProductPage } from './components/product-page/product-page';
 
 export const routes: Routes = [
   { path: '', component: LandingPage, pathMatch: 'full' },
-  { path: 'products', component: ProductPage },
-  { path: 'products/:id', component: ProductPage },
-  { path: 'about', component: AboutPage },
-  { path: 'quality', component: QualityPage },
-  { path: 'contact', component: ContactPage },
-  { path: 'imprint', component: ImprintPage },
-  { path: 'data-policy', component: DataPolicyPage },
-  { path: '**', component: ErrorPage },
+  { path: 'products', component: ProductPage, title: 'Produkte' },
+  { path: 'products/:id', component: ProductPage, title: 'Produkte' },
+  { path: 'about', component: AboutPage, title: 'Über uns' },
+  { path: 'quality', component: QualityPage, title: 'Qualität' },
+  { path: 'contact', component: ContactPage, title: 'Kontakt' },
+  { path: 'imprint', component: ImprintPage, title: 'Impressum' },
+  { path: 'data-policy', component: DataPolicyPage, title: 'Datenschutz' },
+  { path: '**', component: ErrorPage, title: 'Seite nicht gefunden' },
 ];
