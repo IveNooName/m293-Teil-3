@@ -97,10 +97,19 @@ export class ProductPage {
       const id = this.selectedId();
       this.highlightedId.set(id);
       if (id) {
-        setTimeout(() =>
-          document.getElementById('product-' + id)?.scrollIntoView({ behavior: 'smooth' }),
-        );
+        this.scrollToProduct(id);
       }
     });
+  }
+
+  // While the navigation menu is still closing, it locks scrolling on the body (overflow: hidden),
+  // so scrollIntoView would do nothing. Wait until the lock is gone (max. ~2s).
+  private scrollToProduct(id: string, attempt = 0) {
+    const locked = getComputedStyle(document.body).overflow === 'hidden';
+    if (locked && attempt < 120) {
+      requestAnimationFrame(() => this.scrollToProduct(id, attempt + 1));
+      return;
+    }
+    document.getElementById('product-' + id)?.scrollIntoView({ behavior: 'smooth' });
   }
 }
