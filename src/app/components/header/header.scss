@@ -93,10 +93,26 @@ header {
 @media (width < 350px) {
   .company {
     &.name {
-      font-size: 14px;
+      font-size: 12.5px;
     }
     &.subtext {
       font-size: 8px;
     }
+  }
+}
+
+@media (width < 400px) {
+  .logo {
+    height: 48px;
+    padding-right: 0;
+  }
+
+  .logo-container {
+    gap: 6px;
+    min-width: 0;
+  }
+
+  .menu-icon {
+    font-size: 20px;
   }
 }
